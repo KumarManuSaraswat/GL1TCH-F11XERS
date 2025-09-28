@@ -38,7 +38,7 @@
         .card-shadow:hover {
             transform: translateY(-5px);
             /* Hover shadow uses Green (sih-secondary) */
-            box-shadow: 12px 12px 0px -2px rgba(56, 142, 60, 0.8);
+            box-shadow: 12px 12px 0px -2px rgba(255, 221, 153, 0.8);
         }
         .container-padding {
             padding: 1.5rem;
@@ -51,7 +51,7 @@
 
         /* Hero Background - NOW BLUE */
         .hero-bg {
-            background-color: #1E88E5; /* Vibrant Sky Blue */
+            background-color: #ffa550; /* Vibrant Sky Blue */
         }
 
         /* General Fade-In Animation for initial load */
@@ -85,7 +85,7 @@
             /* Use a semi-transparent background for better contrast against the colorful map */
             background-color: rgba(255, 255, 255, 0.85); 
             color: #2A2A2A; 
-            border: 1px solid #388E3C; /* Green border */
+            border: 1px solid #ffc27d; /* Green border */
             transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
             z-index: 10; 
@@ -132,7 +132,7 @@ background="ind.png">
 
         <!-- Hero Section - Uses Blue background now -->
         <section class="text-center py-16 hero-bg rounded-xl mb-12 shadow-2xl animate-fadeIn">
-            <h2 class="font-serif text-5xl md:text-6xl font-extrabold text-white mb-4">
+            <h2 class="font-serif text-5xl md:text-6xl font-extrabold text-white mb-4" style="color: white;">
                 Bhavya Bharat: India's Heritage, Unified.
             </h2>
             <p class="text-xl text-sih-background max-w-3xl mx-auto">
@@ -142,10 +142,10 @@ background="ind.png">
 
         <!-- Interactive State Selection / Map Simulation -->
         <section id="explore" class="mb-12">
-            <h3 class="text-4xl font-serif font-bold text-center mb-4 text-sih-secondary">
+            <h3 class="text-4xl font-serif font-bold text-center mb-4 text-sih-secondary" style="color: white;">
                 Explore India's Heritage
             </h3>
-            <p class="text-center text-lg text-sih-text/80 mb-6">Click on a state on the **Interactive Map** or use the quick search bar.</p>
+            <p class="text-center text-lg text-sih-text/80 mb-6" style="color: white;">Click on a state on the **Interactive Map** or use the quick search bar.</p>
 
             <!-- Quick Search Input for Interactivity -->
             <div class="max-w-xl mx-auto mb-6">
@@ -278,7 +278,7 @@ background="ind.png">
                 funFact: "The Mughal Gardens in Srinagar are famous for their Persian architecture."
             },
             "Punjab": {
-                icon: "🌾", region: "Northern India", top: 18, left: 29,
+                icon: "🌾", region: "Northern India", top: 25, left: 30,
                 monument: "Golden Temple", festival: "Baisakhi",
                 art: "Bhangra Dance", cuisine: "Makki di Roti and Sarson da Saag",
                 description: "The land of five rivers, celebrated for its spirited culture, agriculture, and hospitality.",
@@ -299,7 +299,7 @@ background="ind.png">
                 funFact: "It is the most populous state in India and a major spiritual center."
             },
             "Gujarat": {
-                icon: "🦁", region: "Western India", top: 50, left: 16,
+                icon: "🦁", region: "Western India", top: 48, left: 22,
                 monument: "Statue of Unity", festival: "Navratri",
                 art: "Garba Dance", cuisine: "Dhokla & Undhiyu",
                 description: "Known for its entrepreneurial spirit, coastal beauty, and vibrant traditional dance festivals.",
@@ -313,14 +313,14 @@ background="ind.png">
                 funFact: "Mumbai (formerly Bombay) is the financial, commercial, and entertainment capital of India."
             },
             "West Bengal": {
-                icon: "🎨", region: "Eastern India", top: 48, left: 73,
+                icon: "🎨", region: "Eastern India", top: 48, left: 70,
                 monument: "Victoria Memorial", festival: "Durga Puja",
                 art: "Baul Music", cuisine: "Roshogolla & Machher Jhol",
                 description: "The cultural heart of India, Bengal is a hub for literature, arts, and elaborate festivals.",
                 funFact: "Kolkata was the capital of British India until 1911."
             },
             "Kerala": {
-                icon: "🌴", region: "Southern India", top: 90, left: 40,
+                icon: "🌴", region: "Southern India", top: 90, left: 32,
                 monument: "Padmanabhaswamy Temple",
                 festival: "Onam", art: "Kathakali",
                 cuisine: "Sadya (Vegetarian Feast)",
@@ -328,7 +328,7 @@ background="ind.png">
                 funFact: "Kerala has the highest literacy rate in India, consistently above 94%."
             },
             "Tamil Nadu": {
-                icon: "🔱", region: "Southern India", top: 85, left: 50,
+                icon: "🔱", region: "Southern India", top: 89, left: 43,
                 monument: "Meenakshi Amman Temple",
                 festival: "Pongal", art: "Bharatanatyam",
                 cuisine: "Idli, Dosa, Sambhar",
@@ -337,14 +337,14 @@ background="ind.png">
             }
             // Additional states added to the mock data for better map coverage
             ,"Madhya Pradesh": {
-                icon: "🐯", region: "Central India", top: 52, left: 45,
+                icon: "🐯", region: "Central India", top: 50, left: 42,
                 monument: "Khajuraho Group of Monuments", festival: "Khajuraho Dance Festival",
                 art: "Gond Painting", cuisine: "Bhopali Gosht Korma",
                 description: "The 'Heart of India', known for its dense forests, ancient temples, and wildlife sanctuaries.",
                 funFact: "It is home to the largest diamond reserves in India."
             }
             ,"Odisha": {
-                icon: "☀️", region: "Eastern India", top: 60, left: 63,
+                icon: "☀️", region: "Eastern India", top: 58, left: 59,
                 monument: "Konark Sun Temple", festival: "Ratha Yatra",
                 art: "Odissi Dance", cuisine: "Pakhala Bhata",
                 description: "Famous for its classical dance, magnificent temples, and pristine coastline along the Bay of Bengal.",
