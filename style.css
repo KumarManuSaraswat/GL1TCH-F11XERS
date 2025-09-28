@@ -1,0 +1,79 @@
+
+        /* Custom styles for aesthetic enhancements */
+        /* Updated Shadow Colors to match new palette */
+        .card-shadow {
+            /* Shadow uses Orange (sih-primary) */
+            box-shadow: 8px 8px 0px -2px rgba(255, 140, 0, 0.7); 
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card-shadow:hover {
+            transform: translateY(-5px);
+            /* Hover shadow uses Green (sih-secondary) */
+            box-shadow: 12px 12px 0px -2px rgba(56, 142, 60, 0.8); /* Reverting to original green secondary hover shadow */
+        }
+        .container-padding {
+            padding: 1.5rem;
+        }
+        @media (min-width: 640px) {
+            .container-padding {
+                padding: 2.5rem;
+            }
+        }
+
+        /* Hero Background - NOW BLUE */
+        .hero-bg {
+            background-color: #ffb774; /* Vibrant Sky Blue */ /* Reverting hero background to Blue accent */
+        }
+
+        /* General Fade-In Animation for initial load */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeIn {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+
+        /* Slide Up Animation for Content Cards (Interactivity) */
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .content-card-animation {
+            opacity: 0; 
+            animation: slideUp 0.5s ease-out forwards;
+        }
+        
+        /* Map Button Specific Styling */
+        .map-state-btn {
+            position: absolute;
+            cursor: pointer;
+            padding: 0.5rem 0.75rem;
+            border-radius: 9999px; /* rounded-full */
+            font-size: 0.875rem; /* text-sm */
+            font-weight: 600; /* font-semibold */
+            white-space: nowrap;
+            /* Use a semi-transparent background for better contrast against the colorful map */
+            background-color: rgba(255, 255, 255, 0.85); 
+            color: #2A2A2A; 
+            border: 1px solid #388E3C; /* Green border (from sih-secondary) */
+            transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            z-index: 10; 
+            line-height: 1; 
+            min-width: 70px;
+            text-align: center;
+        }
+        .map-state-btn:hover {
+            transform: scale(1.1);
+            background-color: #FF8C00; /* Orange primary color on hover */
+            color: white;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -4px rgba(0, 0, 0, 0.2);
+        }
+        /* Active state for map buttons */
+        .map-state-btn.bg-sih-primary {
+            background-color: #FF8C00 !important;
+            color: white !important;
+            font-weight: bold;
+        }
+    
